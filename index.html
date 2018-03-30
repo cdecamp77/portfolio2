@@ -12,14 +12,15 @@
     <title>Chris De Camp</title>
 </head>
 <body>
-    
-    <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#blackjack">BlackJack</a>
-        <a href="#aberrant">Aberrant Barter</a>
-        <a href="#fly">Let's Fly</a>
-        <a href="#drawify">Drawify</a>
-        <a href="#contact">Contact</a>
+    <div class="row">
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#blackjack">BlackJack</a>
+            <a href="#aberrant">Aberrant Barter</a>
+            <a href="#fly">Let's Fly</a>
+            <a href="#drawify">Drawify</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 
     <div id="home" class="parallax-container" style="height: 450px;">
@@ -32,6 +33,7 @@
       </div>
     </div>
     
+    <!-- blackjack section -->
         <div class="parallax-container" id="blackjack">
             <div class="parallax">
                 <img src="https://i.imgur.com/Hf1gHYA.png">
@@ -54,6 +56,7 @@
             </div>
         </div>
 
+    <!-- Aberrant section -->
     <div class="parallax-container" id="aberrant">
       <div class="parallax"><img src="https://i.imgur.com/OIuZ9Vy.png"></div>
     </div>
@@ -67,22 +70,25 @@
             email: guest@email.com 
             password: abc123</p>
             <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Screenshots</a>
-                <div id="modal2" class="modal">
-                    <div class="modal-content">
-                        <h4>Aberrant Barter</h4>
-                        <img class="screenshot" src="https://i.imgur.com/ieZCxSL.png">
-                        <img class="screenshot" src="https://i.imgur.com/iksPeq6.png">
-                        <img class="screenshot" src="https://i.imgur.com/OIuZ9Vy.png">
-                    </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4>Aberrant Barter</h4>
+                    <img class="screenshot" src="https://i.imgur.com/ieZCxSL.png">
+                    <img class="screenshot" src="https://i.imgur.com/iksPeq6.png">
+                    <img class="screenshot" src="https://i.imgur.com/OIuZ9Vy.png">
+                </div>
                 <div class="modal-close">
                     <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 
+    <!-- lets fly section -->
     <div class="parallax-container" id="fly">
-      <div class="parallax"><img src="https://i.imgur.com/T28IOge.png"></div>
+        <div class="parallax">
+            <img src="https://i.imgur.com/T28IOge.png">
+        </div>
     </div>
 
     <div class="section white">
@@ -94,7 +100,7 @@
             <br/><br/>
             Feeling spontaneous? Lets Fly can also choose a random destination for you, and if it's not to your liking feel free to spin again for a new destination.
             <br/><br/>
-            This was a group project a team and I built to solve the problem of, "Where should I travel to?". I was responsible for keeping the team on task as the scrum master. I also helped the team with the front-end development, as well as some of the back-end.
+            This was a group project in which a team and I built to solve the problem of, "Where should I travel to?". I was responsible for keeping the team on task as the scrum master. I also helped the team with the front-end development, as well as some of the back-end.
             <br/><br/>
             Login using a Gmail account in order to view save function.
             </p>
@@ -111,6 +117,7 @@
         </div>
     </div>
 
+    <!-- Drawify section -->
     <div class="parallax-container" id="drawify">
       <div class="parallax"><img src="https://i.imgur.com/0ywuGyi.png"></div>
     </div>
@@ -137,6 +144,7 @@
         </div>
     </div>
 
+    <!-- Contact me section -->
     <div class="parallax-container" id="contact">
       <div class="parallax"><img src="https://i.imgur.com/t3YRsyq.jpg"></div>
     </div>
@@ -153,21 +161,21 @@
             </div>
             <!-- form for emailing -->
             <div class="row">
-                <form action="mailto:cdecamp77@gmail.com?subject=Response from Website" method="post" enctype="text/plain">
+                <form action="mailto:cdecamp77@gmail.com?subject=Response from Website" method="POST" enctype="text/plain">
                     <div class="row">
                         <div class="input-field col s4">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="name" type="text" class="validate">
+                            <input id="name" type="text" class="validate" name="name">
                             <label for="name">Name</label>
                         </div>
                         <div class="input-field col s4">
                             <i class="material-icons prefix">business</i>
-                            <input type="text" class="validate" id="business"></input>
+                            <input type="text" class="validate" id="business" name="business"></input>
                             <label for="business">Company</label>
                         </div>
                         <div class="input-field col s4">
                             <i class="material-icons prefix">email</i>
-                            <input type="email" class="validate" id="email">
+                            <input type="email" class="validate" id="email" name="email">
                             <label for="email">Email Address</label>
                         </div>
                     </div>
