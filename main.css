@@ -37,9 +37,23 @@
     background-color: #111;
 }
 
+.parImg {
+    background-position: 50% 300px !important;
+    height: 600px;
+    background-size: 100%;
+}
+
 .section {
     border: 1px solid black;
     margin: 10px;
+}
+
+.modal {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-content: center; 
+    justify-content: center; 
 }
 
 .screenshot {
@@ -55,8 +69,40 @@
     height: 150px;
 }
 
+.contForm {
+    border: 1px solid black;
+    background-color: #ECEBEB;
+}
+
+.emailBut {
+    margin: 10px;
+}
+
 #links {
     display: flex;
     align-items: center; 
     justify-content: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+    background: #24292F;
+    color: white;
 }
