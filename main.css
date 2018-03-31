@@ -54,3 +54,9 @@
 #contact {
     height: 150px;
 }
+
+#links {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
