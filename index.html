@@ -14,7 +14,7 @@
 <body>
     <div class="row">
         <div class="navbar">
-            <a class="active" href="#home">Home</a>
+            <a href="#home">Home</a>
             <a href="#blackjack">BlackJack</a>
             <a href="#aberrant">Aberrant Barter</a>
             <a href="#fly">Let's Fly</a>
@@ -23,32 +23,40 @@
         </div>
     </div>
 
-    <div id="home" class="parallax-container" style="height: 450px;">
-        <div class="parallax"><img class="parImg" src="https://i.imgur.com/x0AJN5G.jpg"></div>
-    </div>
-    <div class="section white">
+    
+    <div id="home" class="section white">
       <div class="row container">
         <h2 class="header">My Name is Christopher<br/> and I am a Web Developer</h2>
-        <p class="grey-text text-darken-3 lighten-3">I am a Web Developer working in HTML5, CSS3, JavaScript, Ruby, ReactJS, and NodeJS. I used to be a manager as well as a line cook, working in restaurants and a food truck. Being a line cook has taught me to focus on time management and exercise patience when the work place got hectic. Currently, I am working on an iOS mobile app, built with React-Native, that allows a pilot to score, track, and assess certain risks in the field and create a log for the FAA to view and verify.</p>
+        <p class="grey-text text-darken-3 lighten-3">I am a Web Developer working in HTML5, CSS3, JavaScript, Ruby, ReactJS, and NodeJS, among others. I used to be a manager as well as a line cook, working in restaurants and a food truck. Working in the food industry has taught me to focus on time management and exercise patience when the work place got hectic. Currently, I am working on an iOS mobile app, built with React-Native, that allows a pilot to score, track, and assess certain risks in the field and create a log for the FAA to view and verify.</p>
       </div>
+    </div>
+    <div  class="parallax-container">
+        <div class="parallax">
+            <img class="parImg" src="https://i.imgur.com/x0AJN5G.jpg">
+        </div>
     </div>
     
     <!-- blackjack section -->
-        <div class="parallax-container" id="blackjack">
-            <div class="parallax">
-                <img class="parImg" src="https://i.imgur.com/Hf1gHYA.png">
-            </div>
-        </div>
-        <div class="section white">
+        <div id="blackjack" class="section white">
             <div class="row container">
-                <h2>BlackJack</h2>
-                <p>BlackJack is a card game where you bet money and play your hand against the dealer. The technologies used were JavaScript, jQuery, HTML, and CSS.</p>
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons right">view_module</i>Screenshots</a>
+                <h2>BlackJack</h2> 
+                <p>BlackJack is a card game where you wager money and play your hand against the dealer. Goal is get as close to 21 as possible without going over while also having a higher total then the dealer. The technologies used were JavaScript, jQuery, HTML, and CSS.</p>
+                <div class="projLinks row">
+                    <div class="col s4">
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons right">view_module</i> Screenshots</a>
+                    </div>
+                    <div class="col s4">
+                        <a class="waves-effect waves-light btn modal-trigger" href="https://cdecamp77.github.io/Black_Jack/"><i class="material-icons right">pageview</i> Deployed</a>
+                    </div>
+                    <div class="col s4">
+                        <a class="waves-effect waves-light btn modal-trigger" href="https://github.com/cdecamp77/Black_Jack"><i class="material-icons right">code</i> Github</a>
+                    </div>
+                </div>
                 <div id="modal1" class="modal">
                     <div class="modal-content"> 
                         <div class="row"><h4>BlackJack</h4></div>
                         <div class="row">
-                            <img class="screenshot col" src="https://i.imgur.com/Ui451ZS.jpg" >
+                            <img class="screenshot row" src="https://i.imgur.com/Ui451ZS.jpg">
                         </div>  
                         <div class="modal-close row">
                             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
@@ -58,12 +66,14 @@
             </div>
         </div>
 
-    <!-- Aberrant section -->
-    <div class="parallax-container" id="aberrant">
-      <div class="parallax"><img class="parImg" src="https://i.imgur.com/OIuZ9Vy.png"></div>
-    </div>
+        <div class="parallax-container" >
+            <div class="parallax">
+                <img class="parImg" src="https://i.imgur.com/Hf1gHYA.png">
+            </div>
+        </div>
 
-    <div class="section white">
+    <!-- Aberrant section -->
+    <div id="aberrant" class="section white">
         <div class="row container">
             <h2>Aberrant Barter</h2>
             <p>Aberrant Barter is an app where users can create a profile, and post items that they would be willing to trade. Other users will then post an offer with a different item that they want to trade for the item you have posted. Users are able to accept an offer that a user has posted and close out the trade. Creative and unusual trades is the premise of the app, so get Aberrant and start making some trades!
@@ -71,7 +81,17 @@
             To login use, 
             email: guest@email.com 
             password: abc123</p>
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><i class="material-icons right">view_module</i>Screenshots</a>
+            <div class="projLinks row">
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><i class="material-icons right">view_module</i> Screenshots</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://aberrant-barter.herokuapp.com/"><i class="material-icons right">pageview</i> Deployed</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://github.com/cdecamp77/Aberrant"><i class="material-icons right">code</i> Github</a>
+                </div>
+            </div>
             <div id="modal2" class="modal">
                 <div class="modal-content">
                     <div class="row"><h4>Aberrant Barter</h4></div>
@@ -88,27 +108,31 @@
         </div>
     </div>
 
-    <!-- lets fly section -->
-    <div class="parallax-container" id="fly">
-        <div class="parallax">
-            <img class="parImg" src="https://i.imgur.com/T28IOge.png">
-        </div>
+    <div class="parallax-container" >
+      <div class="parallax"><img class="parImg" src="https://i.imgur.com/OIuZ9Vy.png"></div>
     </div>
 
-    <div class="section white">
+    <!-- lets fly section -->
+    <div id="fly" class="section white">
         <div class="row container">
             <h2>Let's Fly</h2>
-            <p>Need to book a flight? Use Let's Fly!
+            <p>Feeling spontaneous? Lets Fly can also choose a random destination for you, and if it's not to your liking feel free to spin again for a new destination.
             <br/><br/>
-            This easy to use app allows travelers to book flights on the fly!
-            <br/><br/>
-            Feeling spontaneous? Lets Fly can also choose a random destination for you, and if it's not to your liking feel free to spin again for a new destination.
-            <br/><br/>
-            This was a group project in which a team and I built to solve the problem of, "Where should I travel to?". I was responsible for keeping the team on task as the scrum master. I also helped the team with the front-end development, as well as some of the back-end.
+            This was a group project where we solved the problem of, "Where should I travel to?". I was responsible for keeping the team on task as the scrum master. I also helped the team with the front-end development, as well as some of the back-end.
             <br/><br/>
             Login using a Gmail account in order to view save function.
             </p>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal3"><i class="material-icons right">view_module</i>Screenshots</a>
+            <div class="projLinks row">
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal3"><i class="material-icons right">view_module</i> Screenshots</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://lets--fly.herokuapp.com/"><i class="material-icons right">pageview</i> Deployed</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://github.com/cdecamp77/letsFly/tree/decamp"><i class="material-icons right">code</i> Github</a>
+                </div>
+            </div>
                 <div id="modal3" class="modal">
                     <div class="modal-content">
                         <div class="row"><h4>Let's Fly</h4></div>
@@ -118,53 +142,69 @@
                             <img class="screenshot col s4" src="https://i.imgur.com/fmKPSdB.png">
                         </div>
                     </div>
-                <div class="modal-close">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                    <div class="modal-close">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                    </div>
                 </div>
-                </div>
+                
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img class="parImg" src="https://i.imgur.com/T28IOge.png">
         </div>
     </div>
 
     <!-- Drawify section -->
-    <div class="parallax-container" id="drawify">
-      <div class="parallax"><img class="parImg" src="https://i.imgur.com/0ywuGyi.png"></div>
-    </div>
-
-    <div class="section white">
+    <div id="drawify" class="section white">
         <div class="row container">
-            <h2>Drawify</h2>
-            <p>Drawify is a simple web application where a logged in user uses the web camera on their computer to snap a photo and then have the ability to draw over it!
+            <h2 class="row">Drawify</h2>
+            <p>Drawify is a simple web application where a logged in user uses the web camera on their computer to snap a photo and then have the ability to draw over it using different color and line thickness!
             <br/><br/>
             To login use:
             email: guest@email.com
             password: asdasd</p>
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal4"><i class="material-icons right">view_module</i> Drawify</a>
+            <div class="projLinks row">
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal4"><i class="material-icons right">view_module</i> Screenshots</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://drawify.herokuapp.com/"><i class="material-icons right">pageview</i> Deployed</a>
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-light btn modal-trigger" href="https://github.com/cdecamp77/drawify"><i class="material-icons right">code</i> Github</a>
+                </div>
+            </div>
+        </div>
                 <div id="modal4" class="modal">
-                    <div class="modal-content">
-                        <div class="row"><h4>Screenshots</h4></div>
-                        <div class="row">
-                            <img class="screenshot col s6" src="https://i.imgur.com/ksBFHZG.png">
-                            <img class="screenshot col s6" src="https://i.imgur.com/eotsaQx.png">
-                        </div>
+                <div class="modal-content">
+                    <div class="row"><h4>Screenshots</h4></div>
+                    <div class="row">
+                        <img class="screenshot col s6" src="https://i.imgur.com/ksBFHZG.png">
+                        <img class="screenshot col s6" src="https://i.imgur.com/eotsaQx.png">
                     </div>
+                </div>
                 <div class="modal-close">
                     <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Contact me section -->
-    <div class="parallax-container" id="contact">
-      <div class="parallax"><img class="parImg" src="https://i.imgur.com/t3YRsyq.jpg"></div>
+    <div class="parallax-container">
+      <div class="parallax"><img class="parImg" src="https://i.imgur.com/0ywuGyi.png"></div>
     </div>
 
-    <div class="white">
-        <div class="container">
+    <!-- Contact me section -->
+    
+
+    <div id="contact" class="white">
+        <div class="row container"> 
             <h2>Contact</h2>
-            <p>This is the section where someone can contact me via email, linkedin, and phone number</p>
-            <div class="row" id="links">
-                <div  class="col s4">
+            <p>If you like what you see feel free to email me at <span>cdecamp77@gmail.com</span></p>
+            <div id="links">
+                <div class="col s4">
                     <button type="submit" class="fa fa-folder" onclick="window.open('assets/CDResume.pdf')"> Resume</button>
                 </div>
                 <div class="col s4">
@@ -173,9 +213,17 @@
                 <div class="col s4">
                     <a href="https://github.com/cdecamp77" target="_blank" class="fa fa-github"> GitHub</a>
                 </div>
-            </div>
+            </div> 
+        </div>
+    </div>
+
+     <!-- <div class="parallax-container">
+        <div class="parallax"><img class="parImg" src="https://i.imgur.com/t3YRsyq.jpg"></div>
+    </div>  -->
+
+    
             <!-- form for emailing -->
-            <div class="row">
+            <!-- <div class="row">
                 <form class="contForm" action="mailto:cdecamp77@gmail.com?subject=Response from Website" method="POST" enctype="text/plain">
                     <div class="row">
                         <div class="input-field col s4">
@@ -210,9 +258,8 @@
                         </button>
                     </div>
                 </form>
-            </div>
-        </div>
-    </div>
+            </div> -->
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
